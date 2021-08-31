@@ -3,6 +3,7 @@ import java.lang.Math;
 class BaseConverter {
     public static void main(String[] args) {
         double num = 1500.0;
+        int printNum = (int) num;
         double base = 9.0;
         double i = 0.0;
         double bar;
@@ -20,6 +21,12 @@ class BaseConverter {
                 i = 0.0;
             }
         }
-        System.out.println((int) value);
+        System.out.print("\nThe value of ");
+        System.out.print(printNum);
+        System.out.println(" (base 10) is equal to:");
+        System.out.print((int) value);
+        System.out.print(" (base ");
+        System.out.print((int) base);
+        System.out.println(")\n");
     }
 }
